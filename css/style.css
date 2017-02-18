@@ -1055,6 +1055,18 @@ form label {
   }
 }
 
+.couple-intro{
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  float: right;
+}
+.couple-intro p{
+  color: #F14E95;
+  font-weight: bold;
+}
+
+
 .couple-half {
   width: 50%;
   float: left;
@@ -1353,19 +1365,24 @@ form label {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  text-align: right;
 }
 #fh5co-started .form-control::-webkit-input-placeholder {
+  text-align: center;
   color: #fff;
 }
 #fh5co-started .form-control:-moz-placeholder {
+  text-align: center;
   /* Firefox 18- */
   color: #fff;
 }
 #fh5co-started .form-control::-moz-placeholder {
+  text-align: center;
   /* Firefox 19+ */
   color: #fff;
 }
 #fh5co-started .form-control:-ms-input-placeholder {
+  text-align: center;
   color: #fff;
 }
 #fh5co-started .form-control:focus {
