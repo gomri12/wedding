@@ -2,6 +2,19 @@
 	
 	'use strict';
 
+	// Initialize Firebase
+	 var config = {
+	    apiKey: "AIzaSyCsnRdGkhao-jOPQ1U2YMqH6LcqA903kGM",
+	    authDomain: "wedding-50627.firebaseapp.com",
+	    databaseURL: "https://wedding-50627.firebaseio.com",
+	    storageBucket: "wedding-50627.appspot.com",
+	    messagingSenderId: "229266795471"
+	 };
+	 firebase.initializeApp(config);
+
+
+	
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -18,12 +31,18 @@
 
 	};
 
-	$('#confirm_btn').click(function(){
+	$('#confirm_btn').click(function(e){
+		e.preventDefault();
 		//console.log("the name: " + $('#name').val() + "number:" + $('#number').val());
-		var email = 'gomri2@gmail.com';
-    	var subject = 'Wedding confirmtion';
-    	var emailBody = "the name: " + $('#name').val() + "number:" + $('#number').val();
-    	window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+
+    	var firebaseRef = firebase.database().ref();
+
+    	firebaseRef.child($('#name').val()).set($('#number').val());
+    	$('#myModal').modal('show');
+    	$('#number').val("");
+    	$('#name').val("");
+
+    	
 	});
 
 	$("#navigation_btn").click(function(){

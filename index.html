@@ -65,7 +65,7 @@
 	<![endif]-->
 
 	</head>
-	<body>
+	<body dir="rtl">
 		
 	<div class="fh5co-loader"></div>
 	
@@ -271,12 +271,34 @@
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">נרשמת בהצלחה</h4>
+			      </div>
+			      <div class="modal-body">
+			        <p>תודה רבה על הישתתפותך, מצפים לראותכם טל ועומרי</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
 			<div class="row animate-box">
+
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Are You Attending?</h2>
 					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
 				</div>
 			</div>
+
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-outline">
@@ -406,8 +428,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; Omri Glam. All Rights Reserved.</small> 
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
@@ -427,6 +448,8 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
