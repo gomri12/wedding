@@ -880,6 +880,8 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
+  width: 50%;
+  font-weight: bold;
   color: #F14E95;
   border: none !important;
   font-size: 14px;
