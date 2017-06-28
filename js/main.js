@@ -33,14 +33,16 @@
 
 	$('#confirm_btn').click(function(e){
 		e.preventDefault();
-		//console.log("the name: " + $('#name').val() + "number:" + $('#number').val());
+		console.log("the name: " + $('#name').val() + "number:" + $('#number').val() +" iscoming: " + $('#bus').val());
 
-    	var firebaseRef = firebase.database().ref();
+    	 var firebaseRef = firebase.database().ref();
 
-    	firebaseRef.child($('#name').val()).set($('#number').val());
-    	$('#myModal').modal('show');
-    	$('#number').val("");
-    	$('#name').val("");
+    	 firebaseRef.child($('#name').val()).set({Number:$('#number').val(),Bus:$('#bus').val()});
+    	 $('#myModal').modal('show');
+    	 $('#number').val("");
+    	 $('#name').val("");
+    	 // $('#bus').val("");
+    	 // $('#bus').attr('checked',false);
 
     	
 	});
@@ -67,7 +69,6 @@
 		    //window.location = siteURL;
 		}
 	});
-
 	var offcanvasMenu = function() {
 
 		$('#page').prepend('<div id="fh5co-offcanvas" />');
@@ -279,3 +280,13 @@
 
 
 }());
+
+function checkbox() {
+	var checkbox = $('#bus');
+	//console.log(checkbox.val());
+	if (checkbox.val() == 'Intrested') {
+		$('#bus').val('Not Intrested')
+	}else{
+		$('#bus').val('Intrested')
+	}
+}
