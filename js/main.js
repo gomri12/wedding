@@ -45,7 +45,7 @@
     	
 	});
 
-	$("#navigation_btn").click(function(){
+	$("#navigation_btn, #navigation_btn_top").click(function(){
 		var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'));
 		var isAndroid = navigator.userAgent.match('Android');
 		var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
@@ -56,12 +56,12 @@
 			//$('body').append('<iframe style="visibility: hidden;" src="'+ appURI +'" />');
 
 		}else if ((isAndroid) || (isWP)){
-			console.log("Android");
+			// console.log("Android");
 			window.location = "waze://?q=%D7%A7%D7%90%D7%9C%D7%94+%D7%90%D7%A8%D7%95%D7%A2%D7%99%D7%9D+%D7%91%D7%A2%22%D7%9E%E2%80%AD/@32.8184255,35.0555626,17z/data=!3m1!4b1!4m5!3m4!1s0x151db0b3297ba995:0xdaa976b7d52ec343!8m2!3d32.8184255!4d35.0533739!6m1!1e1?hl=iw";
 			//setTimeout(function () { window.location = siteURL; }, 25);     //fall back url
 		 	//window.location = appURI;
 		}else {    // if (isOtherPlatform)
-			console.log("Windows");
+			// console.log("Windows");
 			window.location = "https://www.google.co.il/maps/place/%D7%A7%D7%90%D7%9C%D7%94+%D7%90%D7%A8%D7%95%D7%A2%D7%99%D7%9D+%D7%91%D7%A2%22%D7%9E%E2%80%AD/@32.8184255,35.0555626,17z/data=!3m1!4b1!4m5!3m4!1s0x151db0b3297ba995:0xdaa976b7d52ec343!8m2!3d32.8184255!4d35.0533739!6m1!1e1?hl=iw";
 		    //window.location = siteURL;
 		}
