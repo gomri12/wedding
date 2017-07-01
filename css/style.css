@@ -826,6 +826,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 form label {
   font-weight: normal !important;
+  float: right;
 }
 
 #fh5co-header .display-tc,
