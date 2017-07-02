@@ -60,7 +60,7 @@
 
 		}else if ((isAndroid) || (isWP)){
 			// console.log("Android");
-			window.location = "waze://??ll=32.81843,35.05337&navigate=yes";
+			window.location = "waze://?ll=32.81843,35.05337&navigate=yes";
 			//setTimeout(function () { window.location = siteURL; }, 25);     //fall back url
 		 	//window.location = appURI;
 		}else {    // if (isOtherPlatform)
