@@ -290,3 +290,11 @@ function checkbox() {
 		$('#bus').val('Intrested')
 	}
 }
+$(document).ready(function() {
+	var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone') || navigator.userAgent.match('iPod'));
+	if (isiOS) {
+		console.log('ios')
+		$('body, h1, h2, h3, h4, h5, h6, figure, .couple-half h3, .fh5co-heading h2, .btn').css({"font-family":"'Alef', Arial, sans-serif"});
+		$('.display-t h1, .display-t h2').css({"font-family":"'Sacramento'"});
+	}
+});

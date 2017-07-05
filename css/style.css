@@ -10,6 +10,14 @@
   font-family: 'shluk';
   src: url("../fonts/shlukaaa400.ttf");
 }
+@font-face{
+  font-family: 'liron';
+  src: url("../fonts/liron.ttf");
+}
+@font-face{
+  font-family: 'Alef';
+  src: url("../fonts/GveretLevinAlefAlefAlef-Regular.ttf");
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -172,7 +180,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "shluk", Arial, serif;
+  font-family: "s", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
